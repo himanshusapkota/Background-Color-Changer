@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Box</title>
+    <style>
+        .box {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        button {
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Choose Option</h1>
+        <button onclick="colorchange('green')">Green</button>
+        <button onclick="colorchange('red')">Red</button>
+        <button onclick="colorchange('black')">Black</button>
+    </div>
+    <script>
+       function colorchange(color) {
+        document.body.style.backgroundColor = color;
+       }
+    </script>
+</body>
+</html>
